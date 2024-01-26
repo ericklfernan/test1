@@ -16,6 +16,5 @@ docker image rm -f image_x
 # remove the files
 rm -r test1/
   
-# bash
-docker exec -itd cont_x sh ? /bin/bash
-docker exec -itd image_x sh ? /bin/bash
+# shell command
+docker exec -it cont_x sh
