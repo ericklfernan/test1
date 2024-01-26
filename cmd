@@ -23,3 +23,14 @@ docker exec -it cont_x sh
 docker run -itd --name cont_x1 image_x
 
 docker run -itd --mount type=bind,source=/root/erick,target=/root --name cont_x1 image_x
+
+THIS ONE WORKS
+1. mkdir erick
+2. git clone https://github.com/ericklfernan/test1.git
+3. docker compose -f ./test/app.yml up -d 
+4. docker exec -it cont_x sh
+5. cd /root
+6. ls
+7. exit
+8. cd /erick
+9. ls
