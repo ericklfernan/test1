@@ -6,7 +6,7 @@ services:
         volumes:
              - type: bind
                source: /root/app2
-               target: /app1/dir
+               target: /app1
         build:
            context: .
            dockerfile: app1.dockerfile
