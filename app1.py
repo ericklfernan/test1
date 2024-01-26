@@ -1,4 +1,5 @@
 import os
+import time
 import datetime
 import csv
 
@@ -25,4 +26,9 @@ with open(f"{curr_path}/{curr_time}.csv","w",newline="") as file:
      writer = csv.writer(file)
      writer.writerows(row_list)
 
-print(6, 'Complete')
+print(6, 'Sleep 120s')
+
+time.sleep(120)
+
+print(7, 'Complete')
+
