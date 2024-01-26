@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: app1.dockerfile
       args:
-        - ENV_VAR1=python:alpine
+        - ENV_VAR0=python:alpine
     environment:
       - DEBUG=true
     
