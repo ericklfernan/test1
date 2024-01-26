@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app_service:
+    image: imagex:1
+    container_name: appko
+    build:
+      context: .
+      dockerfile: app1.dockerfile
+      args:
+        - BASE_IMAGE=python:alpine
+    environment:
+      - DEBUG=true
+    
+
