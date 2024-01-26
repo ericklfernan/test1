@@ -4,8 +4,8 @@ services:
     image: image_x
     volumes:
     - type: bind
-      source: mydata
-      target: /data
+      source: volx
+      target: /app1/dir
     container_name: cont_x
     build:
       context: .
@@ -14,5 +14,6 @@ services:
         - ENV_VAR0=python:alpine
     environment:
       - DEBUG=true
-    
 
+volume:
+    volx:
