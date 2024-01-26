@@ -1,8 +1,9 @@
-ARG BASE_IMAGE
+ARG ENV_VAR1
 FROM ${BASE_IMAGE}
 
-ENV ENV_VAR=anything
+ENV ENV_VAR2=somthing
+ENV ENV_VAR3=anything
 
-WORKDIR /app/dir
-COPY . /app/dir
+WORKDIR /app1/dir
+COPY . /app1/dir
 CMD ["python3","app1.py"]
