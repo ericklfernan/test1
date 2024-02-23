@@ -21,7 +21,6 @@ docker exec -it cont_x sh
 
 # re run a container
 docker run -itd --name cont_x1 image_x
-
 docker run -itd --mount type=bind,source=/root/erick,target=/root --name cont_x1 image_x
 
 THIS ONE WORKS
