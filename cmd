@@ -27,7 +27,16 @@ docker run -itd --mount type=bind,source=/root/erick,target=/root --name cont_x1
 THIS ONE WORKS
 1. mkdir erick
 2. git clone https://github.com/ericklfernan/test1.git
-3. docker compose -f ./test/app.yml up -d 
+3. docker compose -f ./test1/app.yml up -d 
+-----------------------------------------------------
+.. docker logs cont_x
+.. docker container rm cont_x
+.. docker image rm -f image_x
+.. rm -r test1/
+.. # re run a container
+.. docker run -itd --name cont_x1 image_x
+.. docker run -itd --mount type=bind,source=/root/erick,target=/root --name cont_x1 image_x
+-----------------------------------------------------
 4. docker exec -it cont_x sh
 5. cd /root
 6. ls
