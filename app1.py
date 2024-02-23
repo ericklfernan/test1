@@ -21,6 +21,11 @@ print(4, env_var2)
 
 env_var3 = os.environ.get('ENV_VAR3', 'Unknown')
 print(5, env_var3)
+
+#create directory
+if not os.path.exists(f"/{curr_time}"):
+    os.makedirs(f"/{curr_time}")
+  
 #with open(f"{curr_path}/{curr_time}.csv","w",newline="") as file:
 with open(f"/root/{curr_time}/{curr_time}.csv","w",newline="") as file:
      writer = csv.writer(file)
